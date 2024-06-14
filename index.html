@@ -3,65 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <div id="theme-open" class="fas fa-bars"></div>
-
-    <div class="themes-container">
-
-        <div id="theme-close" class="fas fa-times"></div>
-
-        <h3>switch theme</h3>
-
-        <div class="theme-toggler">
-            <span>light</span>
-            <span class="toggler"></span>
-            <span>dart</span>
+     <div class="todo-container">
+        <div class="input">
+            <input type="text" id="todo-input" placeholder="Enter Your Todo">
+            <button id="todo-btn">Add</button>
         </div>
-
-        <h3>pick a color</h3>
-
-        <div class="theme-colors">
-            <div class="color" style="background:#2980b9"></div>
-            <div class="color" style="background:#27ae60;"></div>
-            <div class="color" style="background:#1545f0;"></div>
-            <div class="color" style="background:#8e44ad;"></div>
-            <div class="color" style="background:#0fb9b1;"></div>
-            <div class="color" style="background:#db6606;"></div>
-            <div class="color" style="background:#ff0033;"></div>
-            <div class="color" style="background:#e84393;"></div>
-        </div>
-
-    </div>
-
-    <header>
-        <h1>To Do List 2024</h1>
-        <form id="new-task-form">
-            <input type="text" name="new-task-input" id="new-task-input" placeholder="What do you have planned?" />
-            <input type="submit" id="new-task-submit" value="Add task" />
-        </form>
-    </header>
-    <main>
-        <section class="task-list">
-            <h2>Tasks</h2>
-            <div id="tasks">
-            </div>
-        </section>
-    </main>
-    <!-- custom js file link  -->
+         <div class="todos">
+            <!-- <div class="todo-item">
+                <input type="checkbox" class="todo-check" >
+                <p class="todo">chirag makwana</p>
+                <span class="edit"><i class="fa-solid fa-pen-to-square fa-xs"></i></span>
+                <span class="delete"><i class="fa-solid fa-trash fa-xs"></i></span>
+            </div> -->
+         </div>
+     </div>
     <script src="script.js"></script>
-
 </body>
 
 </html>
